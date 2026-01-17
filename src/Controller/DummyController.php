@@ -30,15 +30,7 @@ class DummyController extends AbstractController
         ]);
     }
 
-    #[Route('/news', name: 'app_news')]
-    public function news(): Response
-    {
-        return $this->render('dummy/news.html.twig', [
-            'controller_name' => 'NewsController',
-        ]);
-    }
-
-    #[Route('/contact', name: 'app_contact')]
+      #[Route('/contact', name: 'app_contact')]
     public function contact(): Response
     {
         return $this->render('dummy/contact.html.twig', [
